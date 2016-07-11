@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="font/iconfont.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery3.min.js"></script>
+	<script src="js/palette.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="palette-box">
+		<div class="tool">
+			<div class="operation">
+				<div>
+					<i class="iconfont add" title="添加" role="add">&#xe601;</i>
+					<i class="iconfont save" title="保存" role="save">&#xe600;</i>
+				</div>
+				<div>
+					<i class="iconfont back" title="返回上一步" role="back">&#xe607;</i>
+					<i class="iconfont go" title="返回下一步" role="go">&#xe60a;</i>
+				</div>
+				
+			</div>
+			<hr>
+			<div class="choose">
+				<div>
+					<i class="iconfont line" title="直线" role="line">&#xe604;</i>
+					<i class="iconfont rect" title="矩形" role="rect">&#xe60d;</i>
+				</div>
+				<div>
+					<i class="iconfont tirangle" title="三角形" role="tirangle">&#xe608;</i>
+					<i class="iconfont circle" title="圆形" role="circle">&#xe60c;</i>
+				</div>
+				<div>
+					<i class="iconfont poly" title="多边形" role="poly">&#xe603;</i>
+					<i class="iconfont polystar" title="多角形" role="polystar">&#xe60b;</i>
+				</div>
+				<div>
+					<i class="iconfont pencil" title="铅笔" role="pencil">&#xe605;</i>
+					<i class="iconfont eraser" title="橡皮" role="eraser">&#xe60e;</i>
+				</div>
+			</div>
+			<hr>
+			<div class="styles">
+				<div>
+					<i class="iconfont fillStyle" title="填充" role="fillStyle">
+						&#xe609;
+						<input type="color" value="#999999">
+					</i>
+				</div>
+				<div>
+					<i class="iconfont strokeStyle" title="描边" role="strokeStyle">	&#xe602;
+						<input type="color" value="#999999">
+					</i>
+				</div>
+				<div class="mixMin">
+					<i><input type="range" max="100" min="1" value="1" title="选择宽度"></i>
+				</div>
+			</div>
+		</div>
+		<div class="main-palette">
+			<div class="create">
+				<h1>创建一张新画布</h1>
+				<div class="p-width">
+					画布宽度：
+					<input type="text" placeholder="请输入画布的宽度">
+				</div>
+				<div class="p-height">
+					画布高度：
+					<input type="text" placeholder="请输入画布的高度">
+				</div>
+				<ul class="btn">
+					<li class="determine">确定</li>
+					<li class="cancle">取消</li>
+				</ul>
+			</div>
+			<div class="canv"></div>
+		</div>
+	</div>
+	<!-- <div class="iconfont">&#xe600;</div> -->
+</body>
+</html>
