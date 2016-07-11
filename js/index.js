@@ -20,7 +20,6 @@ $(function(){
 					createPalette();
 				}
 			}
-			
 		}
 		$cancle.click(function(){
 			$create.css({display:"none"});

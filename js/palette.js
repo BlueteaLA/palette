@@ -154,6 +154,7 @@ palette.prototype.eraser=function(){
 			a.style.top=my-er/2+"px";
 		}
 		document.onmouseup=function(){
+			that.status.push(that.o.getImageData(0,0,that.width,that.height));
 			that.copy.parentNode.removeChild(a);
 			document.onmousemove=null;
 			document.onmouseup=null;
